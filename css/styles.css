@@ -1,13 +1,18 @@
 .container {
   padding: 20px;
-  background-color: cornsilk;
+  background-color: #c6d7eb;
 }
 .jumbotron {
   color: whitesmoke;
+  color: #1868ae;
+  background-color: #d9a5b3;
 }
 .card1 {
   margin: 10px;
   padding: 10px;
+}
+.card1 ol {
+  font-weight: bold;
 }
 .card2 {
   margin: 10px;
