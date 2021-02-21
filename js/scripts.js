@@ -8,23 +8,26 @@ window.addEventListener("DOMContentLoaded", function (){
     event.preventDefault();
     console.log("Form submitted");
 
-  //   let dayOfWeek = (year*365 + trunc((year-1) / 4) - trunc((year-1) / 100) +
-  //   trunc((year-1) / 400)) % 7
+    let user_date = document.getElementById("date").value;
+  	let day = getDayName(user_date,"en-US");
+    // console.log("Your were born on:"+day);
+  
+    let gender = document.getElementById("gender").value;
 
-  //   let femaleNames = ["Akosua" "Adwoa" "Abenaa" "Akua" "Yua" "Afua" "Ama"];
-  //   let maleNames = ["Kwasi" "Kwadwo" "Kwabena" "Kwaku" "Yaw" "Kofi" "Kwame"];
+    // let femaleNames = ["Akosua" "Adwoa" "Abenaa" "Akua" "Yua" "Afua" "Ama"];
+    // let maleNames = ["Kwasi" "Kwadwo" "Kwabena" "Kwaku" "Yaw" "Kofi" "Kwame"];
     
-  //   let akanName = function
+  function akanName(day, gender){
+      if (day === Monday && gender === male) console.log("Akosua");
+       else if (day === Monday && gender ==== female); console.log("Adwoa");
+    }
+    
 
-  // }
-  // )
+  
   function getDayName(dateStr, locale)
   {
-      var date = new Date(dateStr);
+      let date = new Date(dateStr);
       return date.toLocaleDateString(locale, { weekday: 'long' });        
   }
-  
-  var dateStr = '05/23/2014';
-  var day = getDayName(dateStr, "en-US");
-  
+});
 });
