@@ -14,7 +14,7 @@
 
 ## Known Bugs
 
-{Currently, this webpage cannot display a users's akan name. It only displays the day they were born on the console.}
+{There are no known bugs.}
 
 ## Technologies Used
 
