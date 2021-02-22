@@ -24,12 +24,12 @@ window.addEventListener("DOMContentLoaded", function (){
     let maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
     // console.log(femaleNames)
     
-    if (gender == "male"){
-      alert(maleNames[user_date]);
-    }else if (gender == "female"){
-      alert(femaleNames[user_date]);
+    if (gender === "male"){
+      alert("Your Akan Name is: " + maleNames[user_date]);
+    }else if (gender === "female"){
+      alert("Your Akan Name is: " + femaleNames[user_date]);
     }else{
-      alert("Error:Incorrect input");
+      alert("Error: Incorrect input");
     }
 
   
