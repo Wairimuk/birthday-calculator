@@ -1,12 +1,12 @@
 # {Birthday Calculator}
 
-#### {A web page with a form}, {2021}
+#### {A web page with a form that requires a user to fill in their date of brth and choose their gender.}, {2021}
 
 #### By **{Grace Wairimu Karuga}**
 
 ## Description
 
-{This webpage collects birth dates from users and calculates the day of the week when the user was born.}
+{This webpage collects birth dates from users and calculates the day of the week when the user was born then uses this information together with gender to find out what their Akan name is.}
 
 ## Setup/Installation Requirements
 
@@ -14,7 +14,7 @@
 
 ## Known Bugs
 
-{There are no known bugs at this point.}
+{Currently, this webpage cannot display a users's akan name. It only displays the day they were born on the console.}
 
 ## Technologies Used
 

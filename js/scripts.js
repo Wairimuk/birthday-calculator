@@ -10,7 +10,7 @@ window.addEventListener("DOMContentLoaded", function (){
 
     let user_date = document.getElementById("date").value;
   	let day = getDayName(user_date,"en-US");
-    prompt("Your were born on:"+day);
+    alert("Your were born on: "+day);
   
   //   let gender = document.querySelector("gender");
 
