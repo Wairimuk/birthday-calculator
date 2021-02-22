@@ -1,33 +1,39 @@
 window.addEventListener("DOMContentLoaded", function (){
   console.log("Content Loaded");
 
-  let submitBtn = document.querySelector("#btn");
+  // let submitBtn = document.querySelector("#btn");
   let dateForm = document.querySelector("#date-form");
 
   dateForm.addEventListener("submit", function(event) {
     event.preventDefault();
     console.log("Form submitted");
 
-    let user_date = document.getElementById("date").value;
-  	let day = getDayName(user_date,"en-US");
-    alert("Your were born on: "+day);
-  
-  //   let gender = document.querySelector("gender");
 
-  //   let femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yua", "Afua", "Ama"];
-  //   let maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+    let user_date = document.querySelector("#date").value;
+    let date = new Date(user_date);
+    let dateDay = date.getDay();
+    user_date = dateDay;
+    console.log(dateDay);
+
+  	// let day = getDayName(user_date,"en-US");
+    // alert("Your were born on: "+day);
+  
+    let gender = document.querySelector("#gender").value;
+
+    let femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yua", "Afua", "Ama"];
+    let maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+    // console.log(femaleNames)
     
-  // function akanName(day, gender){
-  //     if (day = Monday && gender = male) console.log("Kwasi");
-  //      else if (day = Monday && gender = female) console.log("Adwoa");
-  // }
-    
+    if (gender == "male"){
+      alert(maleNames[user_date]);
+    }else if (gender == "female"){
+      alert(femaleNames[user_date]);
+    }else{
+      alert("Error:Incorrect input");
+    }
 
   
-  function getDayName(dateStr, locale)
-  {
-      let date = new Date(dateStr);
-      return date.toLocaleDateString(locale, { weekday: 'long' });        
-  }
+  
+
 });
 });
